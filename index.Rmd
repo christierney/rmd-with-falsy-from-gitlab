@@ -1,0 +1,20 @@
+---
+title: "RMD with falsy"
+output: html_document
+date: '2022-03-15'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## falsy
+
+This is an R Markdown document with a dependency on https://gitlab.com/jimhester/falsy.
+
+```{r falsy}
+library(falsy)
+
+falsy::is_falsy(0)
+falsy::is_truthy("0")
+```
